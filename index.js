@@ -1,3 +1,6 @@
+import { test } from '/modules/tests/frontend/src/index.mjs'
+
+(()=> {
 //TODO подключение файловой системы
 // import service from '/service/WCNode/src/fs/index.mjs'
 // (async () => {
@@ -10,6 +13,5 @@
 // })()
 
 //TODO подключение тестов
-import { test } from '/modules/tests/frontend/src/index.mjs'
-
-test('/tests/fileSystem/index.test.js', true).catch(e => {console.log('error devtool', e)})
+    test('/tests/fileSystem/index.test.js', true).catch(e => {console.log('error devtool', e)})
+})()
